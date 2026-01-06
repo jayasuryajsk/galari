@@ -1,8 +1,8 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import Image from "next/image";
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { Phone, Linkedin, Menu, X, ChevronDown } from "lucide-react";
 
@@ -10,26 +10,22 @@ const navLinks = [
   { name: "Home", href: "/" },
   {
     name: "About",
-    sublinks: [
-      { name: "Our Story", href: "/our-story" },
-      { name: "Diversity & Inclusion", href: "/diversity-inclusion" },
-      { name: "Snr Leadership Team", href: "/snr-leadership-team" },
-    ],
+    href: "/about",
   },
   {
-    name: "Expertise",
-    href: "/our-expertise",
+    name: "Services",
+    href: "/#services",
     sublinks: [
-      { name: "Water & Wastewater", href: "/expertise/water-wastewater-infrastructure" },
-      { name: "Civil & Rail", href: "/expertise/civil-rail" },
-      { name: "Electrical", href: "/expertise/electrical-infrastructure" },
-      { name: "Gas & Fuel", href: "/expertise/gas-fuel-infrastructure" },
-      { name: "Airports", href: "/expertise/airports" },
-      { name: "Defence", href: "/expertise/defence" },
+      { name: "Land Management", href: "/land-management" },
+      { name: "Environmental Advisory", href: "/environmental-advisory" },
+      { name: "The Barefoot Academy", href: "/barefoot-academy" },
+      { name: "Civil Infrastructure", href: "/civil" },
+      { name: "Aviation", href: "https://www.learn2fly.com.au/" },
+      { name: "Housing", href: "/housing" },
     ],
   },
-  { name: "Careers", href: "/careers" },
-  { name: "Contact", href: "/contact-us" },
+  { name: "Team", href: "/team" },
+  { name: "Contact", href: "/contact" },
 ];
 
 export default function Header() {
@@ -51,61 +47,66 @@ export default function Header() {
 
   return (
     <header
-      className={`fixed top-0 left-0 w-full bg-white transition-shadow duration-300 z-[1000] ${
-        isSticky ? "shadow-[0_2px_8px_rgba(0,0,0,0.08)]" : ""
-      }`}
+      className={`fixed top-0 left-0 w-full transition-all duration-500 z-[1000] border-b ${isSticky ? "bg-white/95 backdrop-blur-md py-3 shadow-md border-border" : "bg-white py-5 border-transparent"
+        }`}
     >
-      <div className="mx-auto max-w-[1200px] px-8">
-        <div className="flex h-[100px] items-center justify-between">
+      <div className="mx-auto max-w-[1400px] px-6 md:px-12">
+        <div className="flex items-center justify-between">
           <div className="flex-shrink-0">
-            <Link href="/" aria-label="Vaughan Civil Homepage">
+            <Link href="/" aria-label="18fifty3 Homepage" className="block transform transition-transform duration-300 hover:scale-[1.02]">
               <Image
-                src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/defc71b0-8e90-4aef-a168-e06709cb16c8-vaughancivil-com-au/assets/images/cropped-Vaughan-Civil-Logo-1.jpg"
-                alt="Vaughan Civil Logo"
-                width={214}
-                height={130}
-                className="h-auto w-[150px]"
+                src="/18fifty3-logo.png"
+                alt="18fifty3 Group Logo"
+                width={180}
+                height={50}
+                className={`h-10 w-auto object-contain transition-all duration-500`}
                 priority
               />
             </Link>
           </div>
 
           <nav className="hidden lg:block">
-            <ul className="flex items-center gap-x-8">
+            <ul className="flex items-center gap-x-10">
               {navLinks.map((link) => (
                 <li key={link.name} className="group relative">
                   {link.sublinks ? (
                     <>
-                      <div className="flex cursor-default items-center gap-1">
+                      <div className="flex cursor-default items-center gap-1.5 py-2">
                         {link.href ? (
-                           <Link href={link.href} className="text-base font-medium text-foreground hover:text-primary hover:underline">
+                          <Link href={link.href} className="text-[13px] font-bold uppercase tracking-widest transition-colors hover:text-accent text-primary">
                             {link.name}
                           </Link>
                         ) : (
-                          <span className="text-base font-medium text-foreground">
+                          <span className="text-[13px] font-bold uppercase tracking-widest transition-colors text-primary">
                             {link.name}
                           </span>
                         )}
-                        <ChevronDown className="h-4 w-4 text-foreground/80 transition-transform duration-200 group-hover:rotate-180" />
+                        <ChevronDown className="h-3 w-3 transition-transform duration-300 group-hover:rotate-180 text-muted-foreground" />
                       </div>
-                      <ul className="absolute left-1/2 top-full z-[999] mt-2 w-max -translate-x-1/2 scale-95 transform-gpu space-y-2 rounded-md bg-white p-4 opacity-0 shadow-[0_4px_12px_rgba(0,0,0,0.1)] transition-all duration-200 group-hover:scale-100 group-hover:opacity-100">
-                        {link.sublinks.map((sublink) => (
-                          <li key={sublink.name}>
-                            <Link href={sublink.href} className="block whitespace-nowrap px-2 py-1 text-base font-medium text-foreground hover:text-primary hover:underline">
-                              {sublink.name}
-                            </Link>
-                          </li>
-                        ))}
-                      </ul>
+                      <div className="absolute left-0 top-full z-[999] mt-0 w-64 translate-y-2 transform-gpu opacity-0 invisible group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 transition-all duration-300">
+                        <div className="mt-2 bg-primary p-4 shadow-2xl skew-x-[-2deg]">
+                          <div className="skew-x-[2deg] space-y-1">
+                            {link.sublinks.map((sublink) => (
+                              <Link key={sublink.name} href={sublink.href} className="block px-3 py-2.5 text-[12px] font-bold uppercase tracking-wider text-white/70 hover:text-accent hover:bg-white/5 transition-colors border-l-2 border-transparent hover:border-accent">
+                                {sublink.name}
+                              </Link>
+                            ))}
+                          </div>
+                        </div>
+                      </div>
                     </>
                   ) : (
                     <Link
                       href={link.href}
-                      className={`text-base font-medium hover:text-primary hover:underline ${
-                        pathname === link.href ? "text-primary" : "text-foreground"
-                      }`}
+                      className={`text-[13px] font-bold uppercase tracking-widest transition-colors hover:text-accent ${pathname === link.href
+                        ? "text-accent"
+                        : "text-primary"
+                        }`}
                     >
                       {link.name}
+                      {pathname === link.href && (
+                        <span className="block h-0.5 w-full bg-accent mt-0.5"></span>
+                      )}
                     </Link>
                   )}
                 </li>
@@ -113,11 +114,20 @@ export default function Header() {
             </ul>
           </nav>
 
-          <div className="hidden items-center gap-x-5 lg:flex">
-            <a href="tel:1300427614" aria-label="Call Vaughan Civil" className="text-foreground hover:text-primary">
-              <Phone size={18} />
-            </a>
-            <a href="https://au.linkedin.com/company/vaughan-civil-pty-ltd" target="_blank" rel="noopener noreferrer" aria-label="Vaughan Civil on LinkedIn" className="text-foreground hover:text-primary">
+          <div className="hidden items-center gap-x-8 lg:flex">
+            <div className="flex flex-col items-end">
+              <span className="text-[10px] font-bold uppercase tracking-widest text-muted-foreground">General Enquiries</span>
+              <a href="tel:+61261234567" className="text-sm font-bold text-primary hover:text-accent transition-colors">
+                (02) 6123 4567
+              </a>
+            </div>
+
+            <Link href="/contact" className="px-6 py-3 bg-primary text-white text-xs font-bold uppercase tracking-widest hover:bg-accent hover:text-primary transition-all duration-300 flex items-center gap-2">
+              Tender Portal
+              <div className="w-1.5 h-1.5 bg-accent group-hover:bg-primary rounded-full animate-pulse"></div>
+            </Link>
+
+            <a href="https://www.linkedin.com/company/18fifty3-group" target="_blank" rel="noopener noreferrer" aria-label="18fifty3 on LinkedIn" className="p-2 border border-border hover:border-accent hover:text-accent transition-all duration-300">
               <Linkedin size={18} />
             </a>
           </div>
@@ -126,53 +136,49 @@ export default function Header() {
             <button
               onClick={() => setIsMenuOpen(true)}
               aria-label="Open menu"
-              className="text-foreground"
+              className="p-2 border border-primary text-primary hover:bg-primary hover:text-white transition-colors"
             >
-              <Menu size={28} />
+              <Menu size={24} />
             </button>
           </div>
         </div>
       </div>
 
+      {/* Mobile Menu Overlay */}
       <div
-        className={`fixed inset-0 z-[1001] transform bg-white transition-transform duration-300 ease-in-out lg:hidden ${
-          isMenuOpen ? "translate-x-0" : "translate-x-full"
-        }`}
+        className={`fixed inset-0 z-[1001] bg-primary transition-all duration-500 ease-in-out lg:hidden ${isMenuOpen ? "opacity-100 visible" : "opacity-0 invisible pointer-events-none"
+          }`}
       >
         <div className="flex h-full flex-col">
-          <div className="flex items-center justify-between px-8 h-[100px] border-b border-border">
-             <Link href="/" onClick={() => setIsMenuOpen(false)}>
+          <div className="flex items-center justify-between px-8 h-[100px] border-b border-white/10">
+            <Link href="/" onClick={() => setIsMenuOpen(false)}>
               <Image
-                src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/defc71b0-8e90-4aef-a168-e06709cb16c8-vaughancivil-com-au/assets/images/cropped-Vaughan-Civil-Logo-1.jpg"
-                alt="Vaughan Civil Logo"
-                width={214}
-                height={130}
-                className="h-auto w-[150px]"
+                src="/18fifty3-logo.png"
+                alt="18fifty3 Group Logo"
+                width={160}
+                height={40}
+                className="h-8 w-auto brightness-0 invert"
               />
             </Link>
-            <button onClick={() => setIsMenuOpen(false)} aria-label="Close menu">
-              <X size={28} />
+            <button onClick={() => setIsMenuOpen(false)} aria-label="Close menu" className="text-white p-2 border border-white/20">
+              <X size={24} />
             </button>
           </div>
-          
-          <nav className="flex-grow overflow-y-auto p-8">
-            <ul className="flex flex-col gap-y-6">
+
+          <nav className="flex-grow overflow-y-auto p-12">
+            <ul className="flex flex-col gap-y-8">
               {navLinks.map((link) => (
                 <li key={link.name}>
                   {link.sublinks ? (
                     <details className="group">
-                      <summary className="flex cursor-pointer list-none items-center justify-between text-xl font-medium">
-                        {link.href ? (
-                          <Link href={link.href} onClick={() => setIsMenuOpen(false)}>{link.name}</Link>
-                        ) : (
-                          <span>{link.name}</span>
-                        )}
-                        <ChevronDown className="h-5 w-5 transition-transform duration-200 group-open:rotate-180" />
+                      <summary className="flex cursor-pointer list-none items-center justify-between text-2xl font-bold uppercase tracking-[0.2em] text-white">
+                        {link.name}
+                        <ChevronDown className="h-6 w-6 transition-transform duration-300 group-open:rotate-180 text-accent" />
                       </summary>
-                      <ul className="mt-4 space-y-4 pl-4">
+                      <ul className="mt-6 space-y-4 pl-4 border-l border-white/10 ml-2">
                         {link.sublinks.map((sublink) => (
                           <li key={sublink.name}>
-                            <Link href={sublink.href} onClick={() => setIsMenuOpen(false)} className="text-lg text-muted-foreground hover:text-primary">
+                            <Link href={sublink.href} onClick={() => setIsMenuOpen(false)} className="text-lg font-bold uppercase tracking-widest text-white/50 hover:text-accent transition-colors">
                               {sublink.name}
                             </Link>
                           </li>
@@ -183,7 +189,7 @@ export default function Header() {
                     <Link
                       href={link.href}
                       onClick={() => setIsMenuOpen(false)}
-                      className={`text-xl font-medium ${pathname === link.href ? "text-primary" : "text-foreground"}`}
+                      className={`text-2xl font-bold uppercase tracking-[0.2em] ${pathname === link.href ? "text-accent" : "text-white"}`}
                     >
                       {link.name}
                     </Link>
@@ -191,13 +197,19 @@ export default function Header() {
                 </li>
               ))}
             </ul>
-             <div className="mt-8 flex items-center gap-x-6 border-t border-border pt-6">
-                <a href="tel:1300427614" aria-label="Call Vaughan Civil" onClick={() => setIsMenuOpen(false)}>
-                  <Phone size={22} />
+            <div className="mt-16 pt-12 border-t border-white/10 space-y-8">
+              <div className="flex flex-col gap-2">
+                <span className="text-[10px] font-bold uppercase tracking-[0.3em] text-white/30">Connect</span>
+                <a href="https://www.linkedin.com/company/18fifty3-group" target="_blank" rel="noopener noreferrer" className="text-xl font-bold text-white hover:text-accent transition-colors">
+                  LinkedIn
                 </a>
-                <a href="https://au.linkedin.com/company/vaughan-civil-pty-ltd" target="_blank" rel="noopener noreferrer" aria-label="Vaughan Civil on LinkedIn" onClick={() => setIsMenuOpen(false)}>
-                  <Linkedin size={22} />
+              </div>
+              <div className="flex flex-col gap-2">
+                <span className="text-[10px] font-bold uppercase tracking-[0.3em] text-white/30">Let's talk</span>
+                <a href="tel:+61261234567" className="text-xl font-bold text-accent">
+                  (02) 6123 4567
                 </a>
+              </div>
             </div>
           </nav>
         </div>
