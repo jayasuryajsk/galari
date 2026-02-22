@@ -4,6 +4,7 @@ import "./globals.css";
 import VisualEditsMessenger from "../visual-edits/VisualEditsMessenger";
 import ErrorReporter from "@/components/ErrorReporter";
 import Script from "next/script";
+import { Suspense } from "react";
 import TrackingManager from "@/components/marketing/tracking-manager";
 import Header from "@/components/sections/header";
 import Footer from "@/components/sections/footer";
@@ -74,7 +75,9 @@ export default function RootLayout({
         <Header />
         <main className="pt-[96px]">{children}</main>
         <Footer />
-        <TrackingManager />
+        <Suspense fallback={null}>
+          <TrackingManager />
+        </Suspense>
         <VisualEditsMessenger />
       </body>
     </html>
