@@ -52,7 +52,27 @@ const PrivacyPage = () => {
                     </div>
 
                     <div className="space-y-4">
-                        <h2 className="text-2xl font-bold text-primary uppercase tracking-tight">4. Contact Us</h2>
+                        <h2 className="text-2xl font-bold text-primary uppercase tracking-tight">4. Cookies and Tracking Technologies</h2>
+                        <p>
+                            We use cookies and similar technologies to understand website usage, improve performance, and support marketing activity. This may include analytics and advertising technologies such as Google Analytics, Google Tag Manager, Google AdSense, and Meta Pixel.
+                        </p>
+                        <p>
+                            You can manage non-essential tracking preferences through our cookie consent controls. Essential cookies remain enabled to support core site functionality.
+                        </p>
+                    </div>
+
+                    <div className="space-y-4">
+                        <h2 className="text-2xl font-bold text-primary uppercase tracking-tight">5. Advertising and Remarketing</h2>
+                        <p>
+                            We may use advertising technologies to measure campaign performance and provide more relevant ads. These services may collect browser identifiers, page interaction signals, and referral information.
+                        </p>
+                        <p>
+                            You can opt out of personalized advertising by adjusting your consent preferences and browser settings.
+                        </p>
+                    </div>
+
+                    <div className="space-y-4">
+                        <h2 className="text-2xl font-bold text-primary uppercase tracking-tight">6. Contact Us</h2>
                         <p>
                             If you have any questions about this Privacy Policy, please contact us at:
                         </p>

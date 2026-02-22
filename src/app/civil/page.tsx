@@ -11,23 +11,23 @@ const CivilPage = () => {
     const sections = [
         {
             title: "Strategic Operations",
-            description: "18FiFTY3 Group are civil earthworks, rural and remote earthworks and management specialists. Our team of specialists are highly experienced in civil operations in urban and remote areas.",
+            description: "18FiFTY3 Group are civil earthworks, rural and remote earthworks and management specialists. Operating a full-service, integrated approach under quality and safety management systems, the team completes multiple tasks across urban and remote areas.",
             features: [
                 "Increased production and reduced program time",
-                "Savings for larger projects",
-                "Better site safety and public perception",
+                "Savings for larger jobs",
+                "Better site safety and public perception of the project",
                 "Innovative work techniques"
             ],
             icon: HardHat
         },
         {
             title: "Civil Construction",
-            description: "Delivering a range of landscaping and maintenance services, our team provides planning, ground maintenance, grounds and tree services. From small cemeteries to large airports, we develop self-sustaining solutions.",
+            description: "Delivering landscaping and maintenance services including planning, ground maintenance, and tree services. From small cemeteries to major airports, 18FiFTY3 develops local-condition maintenance solutions while providing an Indigenous workforce.",
             icon: Drill
         },
         {
             title: "Planning & IPM",
-            description: "Environmental Management planning is essential for creating practical and economical solutions. We provide Integrated Pest Management (IPM) as an environmentally sensitive way of managing pests.",
+            description: "Environmental Management planning is essential for practical and economical outcomes. 18FiFTY3 provides Integrated Pest Management plans for private, mining and government lands to reduce pesticide-intensive activity and improve long-term outcomes.",
             icon: Settings
         }
     ];
@@ -38,7 +38,7 @@ const CivilPage = () => {
                 title="Civil Infrastructure"
                 category="Technical Services"
                 breadcrumb="Infrastructure"
-                subtitle="Specialized civil and remote earthworks management focusing on efficiency, safety, and environmental integration."
+                subtitle="Civil earthworks, rural and remote earthworks and management specialists with integrated environmental capability."
             />
 
             {/* Core Capabilities */}
@@ -88,12 +88,12 @@ const CivilPage = () => {
                             transition={{ duration: 0.8 }}
                             className="space-y-8"
                         >
-                            <span className="text-accent text-[10px] font-bold tracking-[0.4em] uppercase">Operations</span>
+                            <span className="text-accent text-xs font-bold tracking-[0.18em] uppercase">Operations</span>
                             <h2 className="text-5xl md:text-6xl font-bold uppercase tracking-tighter leading-none">
                                 Precision <br /> Delivery<span className="text-accent">.</span>
                             </h2>
                             <p className="text-white/70 text-lg leading-relaxed max-w-xl">
-                                18FiFTY3 Group Civil arm seeks out challenges and views difficult and unique projects as opportunities. We use skills gained during decades of experience to achieve program objectives and pass on cost savings to clients through innovative work techniques and cutting-edge machinery.
+                                18FiFTY3 Group Civil seeks out difficult and unique projects as opportunities. The team applies years of experience, cutting-edge machinery, and intelligent design alternatives to meet program objectives and pass cost savings to clients.
                             </p>
                             <div className="pt-8">
                                 <Link href="/contact" className="inline-flex items-center gap-6 py-5 px-10 border border-white/20 text-white text-xs font-bold uppercase tracking-widest hover:bg-accent hover:text-primary hover:border-accent transition-all duration-500 group">
@@ -111,7 +111,7 @@ const CivilPage = () => {
                             className="relative aspect-square lg:aspect-video overflow-hidden border border-white/10"
                         >
                             <Image
-                                src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/defc71b0-8e90-4aef-a168-e06709cb16c8-vaughancivil-com-au/assets/images/SYD-AIR-Aerial-10.jpg"
+                                src="https://images.squarespace-cdn.com/content/v1/65d43588ddcb5b7876a3823e/6638dd5b-c323-4886-96e2-d804de966b4c/1818-2.jpg"
                                 alt="Civil Infrastructure"
                                 fill
                                 className="object-cover grayscale hover:grayscale-0 transition-all duration-1000"

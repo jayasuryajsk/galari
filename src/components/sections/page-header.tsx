@@ -12,7 +12,7 @@ interface PageHeaderProps {
 
 const PageHeader = ({ title, subtitle, category, breadcrumb }: PageHeaderProps) => {
     return (
-        <section className="relative bg-white pt-48 pb-24 overflow-hidden border-b border-border">
+        <section className="relative bg-secondary pt-48 pb-24 overflow-hidden border-b border-border">
             {/* Background Architectural Grid */}
             <div className="absolute inset-0 pointer-events-none z-0 overflow-hidden">
                 <div className="absolute inset-0 opacity-[0.03]" style={{

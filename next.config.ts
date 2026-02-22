@@ -28,6 +28,17 @@ const nextConfig: NextConfig = {
         loaders: [LOADER]
       }
     }
+  },
+  async redirects() {
+    return [
+      { source: "/home", destination: "/", permanent: true },
+      { source: "/about", destination: "/name", permanent: true },
+      { source: "/our-story", destination: "/name", permanent: true },
+      { source: "/contact-us", destination: "/contact", permanent: true },
+      { source: "/our-expertise", destination: "/sevices", permanent: true },
+      { source: "/snr-leadership-team", destination: "/team", permanent: true },
+      { source: "/projects", destination: "/gallery", permanent: true }
+    ];
   }
 };
 

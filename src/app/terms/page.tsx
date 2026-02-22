@@ -49,6 +49,13 @@ const TermsPage = () => {
                             In no event shall 18FiFTY3 Group or its suppliers be liable for any damages (including, without limitation, damages for loss of data or profit, or due to business interruption) arising out of the use or inability to use the materials on 18FiFTY3 Group's website.
                         </p>
                     </div>
+
+                    <div className="space-y-4">
+                        <h2 className="text-2xl font-bold text-primary uppercase tracking-tight">5. Advertising and Analytics Services</h2>
+                        <p>
+                            This website may use third-party analytics and advertising services, including Google and Meta technologies, to measure traffic, understand user behavior, and optimize marketing performance. Use of these services is subject to your consent preferences and our Privacy Policy.
+                        </p>
+                    </div>
                 </div>
             </section>
         </div>

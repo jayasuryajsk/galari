@@ -19,7 +19,7 @@ const HousingPage = () => {
                 title="Sustainable Housing"
                 category="Infrastructure"
                 breadcrumb="Modular"
-                subtitle="Innovative, transportable, and off-grid housing solutions designed for remote Australian conditions."
+                subtitle="18fifty3 Group with partners has designed and developed innovative transportable and off-grid housing solutions."
             />
 
             <section className="py-24 max-w-[1600px] mx-auto px-6 md:px-12">
@@ -34,7 +34,10 @@ const HousingPage = () => {
                             Adaptable <br /> Dwellings<span className="text-accent">.</span>
                         </h2>
                         <p className="text-lg text-muted-foreground leading-relaxed font-medium">
-                            Designed and manufactured in the ACT and NSW, our dwellings use structural insulated panels for superior thermal and acoustic integrity, ensuring a lower carbon footprint.
+                            Designed and manufactured in the ACT and NSW, Adaptable Dwellings come in a range of configurations and sizes to suit off-grid and town-connected settings.
+                        </p>
+                        <p className="text-lg text-muted-foreground leading-relaxed font-medium">
+                            Built with Australian steel and structural insulated panels, they deliver strong thermal, acoustic, and structural integrity with a lower carbon footprint. Solar panels, rechargeable batteries, and water tanks support fully off-grid operation.
                         </p>
                         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 pt-6">
                             {systems.map((s, i) => (
@@ -55,7 +58,7 @@ const HousingPage = () => {
                         className="relative aspect-square border border-border overflow-hidden"
                     >
                         <Image
-                            src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/defc71b0-8e90-4aef-a168-e06709cb16c8-vaughancivil-com-au/assets/images/block-12.png"
+                            src="https://images.squarespace-cdn.com/content/v1/65d43588ddcb5b7876a3823e/042f7d01-ff22-4687-b16f-3a008d5346e5/Screen+Shot+2024-04-09+at+12.50.38+pm.png"
                             alt="Sustainable Housing Module"
                             fill
                             className="object-cover grayscale"
@@ -67,7 +70,7 @@ const HousingPage = () => {
             <section className="py-24 bg-secondary">
                 <div className="max-w-[1600px] mx-auto px-6 md:px-12 text-center">
                     <div className="max-w-3xl mx-auto space-y-8">
-                        <span className="text-accent text-[10px] font-bold tracking-[0.4em] uppercase">Off-Grid Excellence</span>
+                        <span className="text-accent text-xs font-bold tracking-[0.18em] uppercase">Off-Grid Excellence</span>
                         <h3 className="text-3xl font-bold text-primary uppercase tracking-tighter">
                             Ready for town-connected <br /> or completely remote settings.
                         </h3>

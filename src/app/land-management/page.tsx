@@ -10,17 +10,17 @@ const LandManagementPage = () => {
     const pillars = [
         {
             title: "Advanced Weed Control",
-            description: "Implementing sustainable and eco-friendly solutions to manage invasive species with precision across diverse Australian landscapes.",
+            description: "The 18fifty3 team delivers weed management and control solutions across remote and urban landscapes, using integrated pest management and a tailored mix of cultural methods, selective herbicide application, broad-acre spraying, aerial treatments, and knapsack application.",
             icon: Sprout
         },
         {
-            title: "Remote Operations",
-            description: "Executing large-scale projects in challenging rural environments using specialized machinery and Indigenous expertise.",
+            title: "Bushfire Risk Reduction",
+            description: "Our team provides property evaluations, bushfire site assessments, mapping and analysis, fuel load control, prescribed burns, patrols, and aerial surveillance and suppression operations to scientifically reduce bushfire risk.",
             icon: Tractor
         },
         {
-            title: "Ecological Restoration",
-            description: "Transforming impacted sites back to their natural state through scientific planning and native biodiversity support.",
+            title: "Equipment and Fleet Capability",
+            description: "18fifty3 operates tractors and slashers, articulated flail mulchers, remote-controlled multi-terrain flail mulchers, posi-track slashers, and forestry mulchers to reduce fire risk, control weeds, and maintain assets across ACT and NSW.",
             icon: Trees
         }
     ];
@@ -31,7 +31,7 @@ const LandManagementPage = () => {
                 title="Land Management"
                 category="Technical Services"
                 breadcrumb="Asset Care"
-                subtitle="Ensuring your land is cared for with precision, advanced technology, and eco-friendly solutions."
+                subtitle="18fifty3 Group specialises in comprehensive environmental management consultancy and service solutions, from strategic planning to practical implementation."
             />
 
             <section className="py-24 max-w-[1600px] mx-auto px-6 md:px-12">
@@ -70,7 +70,7 @@ const LandManagementPage = () => {
                             className="relative aspect-square border border-white/10 overflow-hidden"
                         >
                             <Image
-                                src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/defc71b0-8e90-4aef-a168-e06709cb16c8-vaughancivil-com-au/assets/images/63c7bdbd-d00c-44be-ae06-2dd50a81e08a-7.jpg"
+                                src="https://images.squarespace-cdn.com/content/v1/65d43588ddcb5b7876a3823e/a5fbf396-0f55-43a5-b095-7635002fe675/9a5995d9-d27d-4338-8130-915e1b20ef18.jpg"
                                 alt="Land Management in Action"
                                 fill
                                 className="object-cover grayscale hover:grayscale-0 transition-all duration-1000"
@@ -82,12 +82,12 @@ const LandManagementPage = () => {
                             viewport={{ once: true }}
                             className="space-y-10"
                         >
-                            <span className="text-accent text-[10px] font-bold tracking-[0.4em] uppercase">Excellence</span>
+                            <span className="text-accent text-xs font-bold tracking-[0.18em] uppercase">Excellence</span>
                             <h2 className="text-5xl md:text-6xl font-bold uppercase tracking-tighter leading-none">
                                 Precision Care <br /> for Australia<span className="text-accent">.</span>
                             </h2>
-                            <p className="text-white/60 text-lg leading-relaxed font-medium">
-                                We combine decades of operational experience with modern Landcare techniques. Our commitment is to deliver high-quality, efficient, and safe outcomes while providing meaningful employment for our Aboriginal workforce.
+                            <p className="text-white/70 text-lg leading-relaxed font-medium">
+                                We leverage cutting-edge science and technology alongside extensive operational experience to ensure optimal environmental and economic outcomes for clients. Our commitment extends to empowering Aboriginal employees through meaningful employment, knowledge sharing, and favorable project outcomes.
                             </p>
                             <div className="pt-6">
                                 <a href="/contact" className="inline-block py-5 px-12 border border-accent text-accent text-xs font-bold uppercase tracking-widest hover:bg-accent hover:text-primary transition-all">

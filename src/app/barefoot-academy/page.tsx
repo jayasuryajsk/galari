@@ -13,7 +13,7 @@ const BarefootAcademyPage = () => {
                 title="Barefoot Academy"
                 category="Community & Education"
                 breadcrumb="Initiatives"
-                subtitle="Empowering Indigenous youth by sparking curiosity in technology, agriculture, and the arts."
+                subtitle="A ground-breaking educational support initiative empowering Indigenous primary school children with knowledge about diverse industries."
             />
 
             {/* Mission Section */}
@@ -29,7 +29,10 @@ const BarefootAcademyPage = () => {
                             Broadening <br /> Horizons<span className="text-accent">.</span>
                         </h2>
                         <p className="text-lg text-muted-foreground leading-relaxed font-medium">
-                            The Barefoot Academy is a ground-breaking educational support initiative dedicated to empowering Indigenous primary school children with knowledge about diverse industries.
+                            Understanding the importance of early exposure to different industries, the Barefoot Program introduces Indigenous children to vocational fields including technology, agriculture, arts and crafts, hospitality, and more.
+                        </p>
+                        <p className="text-lg text-muted-foreground leading-relaxed font-medium">
+                            Through engaging and interactive learning experiences, the program broadens horizons and ignites a passion for learning, with the goal of opening doors of opportunity beyond school years.
                         </p>
                         <div className="space-y-6 pt-8">
                             <div className="flex gap-6 pb-8 border-b border-border">
@@ -55,7 +58,7 @@ const BarefootAcademyPage = () => {
                         className="relative aspect-square overflow-hidden"
                     >
                         <Image
-                            src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/defc71b0-8e90-4aef-a168-e06709cb16c8-vaughancivil-com-au/assets/images/IMEX-Container-Beams-9.jpg"
+                            src="https://images.squarespace-cdn.com/content/v1/65d43588ddcb5b7876a3823e/119e2ed2-d15a-4ecf-a861-1599dad80d87/WhatsApp+Image+2024-02-21+at+11.50.04+AM.jpeg"
                             alt="Education Initiative"
                             fill
                             className="object-cover grayscale"
@@ -68,7 +71,7 @@ const BarefootAcademyPage = () => {
             <section className="py-24 bg-primary text-white">
                 <div className="max-w-[1600px] mx-auto px-6 md:px-12">
                     <div className="text-center space-y-6 mb-20">
-                        <span className="text-accent text-[10px] font-bold tracking-[0.4em] uppercase">Featured Journey</span>
+                        <span className="text-accent text-xs font-bold tracking-[0.18em] uppercase">Featured Journey</span>
                         <h2 className="text-5xl font-bold uppercase tracking-tighter">The Barefoot Pilot<span className="text-accent">.</span></h2>
                     </div>
 
@@ -77,7 +80,7 @@ const BarefootAcademyPage = () => {
                             <div className="p-10 border border-white/10 space-y-6 bg-white/5 backdrop-blur-sm">
                                 <h3 className="text-2xl font-bold uppercase tracking-tight text-accent">Tyeisha Clark</h3>
                                 <p className="text-white/70 italic text-lg leading-relaxed">
-                                    "Mastering her aircraft is only the start—her next ambition? To become Australia's first First Nations astronaut."
+                                    "Mastering her aircraft is only the start; her next ambition is to become Australia's first First Nations astronaut."
                                 </p>
                                 <div className="h-[1px] w-12 bg-accent"></div>
                             </div>
@@ -90,10 +93,10 @@ const BarefootAcademyPage = () => {
                                 className="space-y-6 text-lg text-white/80 font-medium leading-relaxed"
                             >
                                 <p>
-                                    Beginning in her hometown of Kowanyama, QLD, Tyeisha's journey is one of resilience and ambition. Under the guidance of her instructor, she mastered landing in strong crosswinds and stalls at 6,000 feet.
+                                    This journey begins in Tyeisha's hometown of Kowanyama, QLD. Under the guidance of her instructor, Lauren, she learned to fly in difficult conditions, from controlled stalls at 6,000 feet to strong crosswind landings.
                                 </p>
                                 <p>
-                                    Her 13-hour epic flight to the Cape took her over the Sydney Harbour Bridge and through regional Australia, serving as an inspiration to every child she met stop along the way.
+                                    With theory and flight training complete, Tyeisha undertook a 13-hour flight to Cape York, passing landmarks including the Sydney Harbour Bridge, stopping at Longreach and local schools, and finally touching down on her ancestral lands.
                                 </p>
                             </motion.div>
                         </div>

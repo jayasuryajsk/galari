@@ -15,32 +15,47 @@ const teamMembers: TeamMember[] = [
     {
         name: "John Sayers",
         role: "Director",
-        bio: "A descendant of the Bundawang (Yuin) Mob, John is a passionate businessman with a background in aviation and property development. He focuses on joining modern technology with Aboriginal culture to drive remote solutions."
+        bio: "John Sayers is desendent from the Bundawang (Yuin) Mob and brings deep leadership experience across aviation, land development, and business. He is passionate about Indigenous employment and joining modern technology, Aboriginal culture, and land management to drive remote solutions."
     },
     {
         name: "Ben Surawski",
         role: "General Manager",
-        bio: "With a background in the Australian Army and as a commercial helicopter pilot, Ben excels in operational efficiency, safety programs, and stakeholder engagement in high-paced environments."
+        bio: "Ben Surawski has a background in Australian Army service, commercial piloting and firefighting, with strengths in stakeholder engagement, contract management, operational efficiency, and safety systems."
     },
     {
-        name: "Danny McClelland",
-        role: "Civil Manager",
-        bio: "Over 17 years of experience in civil works across regional NSW and ACT. Danny manages high-value contracts with a focus on precision, safety, and client satisfaction."
-    },
-    {
-        name: "Isobel Bender",
-        role: "Environmental Specialist",
-        bio: "Educated at ANU in Biodiversity Conservation, Isobel specializes in policy analysis and on-ground conservation, bringing research and field expertise to environmental projects."
+        name: "Peter Chia",
+        role: "Community & Project Lead",
+        bio: "Peter Chia has worked in construction, civil and landscape sectors across NSW over a 32-year career, including major projects and Aboriginal procurement outcomes that generated significant local Aboriginal employment."
     },
     {
         name: "Richard Baker",
         role: "Director / Pilot",
-        bio: "An indigenous man from Borroloola and a commercial helicopter pilot. Richard supports environmental programs on Aboriginal lands and promotes educational/employment opportunities."
+        bio: "Richard Baker, from Borroloola, is a trained NT National Park Ranger and commercial helicopter pilot with over 5,000 flight hours. He supports environmental programs on Aboriginal lands and creates employment pathways through practical operations."
+    },
+    {
+        name: "Isobel Bender",
+        role: "Environmental Specialist",
+        bio: "Isobel Bender combines policy analysis, biodiversity conservation, and practical restoration experience, with a focus on communicating complex environmental science and delivering outcomes across riparian, regenerative, and carbon projects."
+    },
+    {
+        name: "Captain Nino",
+        role: "Landcare Specialist",
+        bio: "Captain Nino has over 25 years in Landcare projects across Australia for clients including Defence, NT Government and Rio Tinto, specializing in weed control, eradication, bush regeneration, and high-quality safe delivery."
+    },
+    {
+        name: "Danny McClelland",
+        role: "Civil Manager",
+        bio: "With over 17 years of experience across civil works from Queensland through regional NSW and ACT, Danny has managed high-value contracts while maintaining client outcomes and safety as top priorities."
     },
     {
         name: "Mark Radford",
         role: "Safety / Project Manager",
-        bio: "A veteran of the SAS Regiment and a qualified ships captain. Mark leads training and safety systems, managing complex projects with disciplined precision."
+        bio: "Mark is an Australian Army veteran, including service in the SAS Regiment, and a qualified ships captain. He leads training and safety systems for 18fifty3 projects and supports major project delivery."
+    },
+    {
+        name: "Andrew",
+        role: "Aviation Lead",
+        bio: "Andrew served 20 years in the Army flying Blackhawks and Kiowa Warriors and is an experienced CASA and RAAus instructor. He brings deep rotary and fixed-wing experience across charter, SAR, medevac, fire, and training operations."
     }
 ];
 

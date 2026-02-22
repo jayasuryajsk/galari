@@ -1,39 +1,38 @@
-/* Exact 18fifty3 Theme Port to Tailwind v4 */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+/* GALARI Theme Port based on 18fifty3 foundation */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700;900&family=Nunito+Sans:wght@400;500;600;700;800&display=swap');
 
 @import "tailwindcss";
 @import "tw-animate-css";
 
 @layer base {
   :root {
-    /* Logo-Inspired Premium Industrial Palette */
-    --brand-primary: 0 0% 4%;
-    /* Deepest Charcoal #0A0A0A */
-
-    --brand-orange: 17 96% 51%;
-    /* Vibrant Logo Orange #F15A24 */
-    --brand-orange-dark: 17 96% 40%;
-    /* Darker Logo Orange for gradients */
-    --brand-blue: 196 100% 44%;
-    /* Precise Logo Blue #00A3E0 */
-    --brand-green: 82 71% 51%;
-    /* Sustainable Logo Green #8DC63F */
+    /* GALARI Premium Field Palette */
+    --brand-primary: 38 12% 12%;
+    /* Deep charcoal with warm tone #29241f */
+    --brand-orange: 30 62% 52%;
+    /* Warm earth orange #d18a4a */
+    --brand-orange-dark: 31 68% 39%;
+    /* Burnt orange #c16f35 */
+    --brand-blue: 199 22% 32%;
+    /* Deep slate-blue accent #3a5d78 */
+    --brand-green: 100 16% 35%;
+    /* Soil olive #5f6f45 */
 
     /* Base Colors */
-    --background: 0 0% 100%;
-    --foreground: 0 0% 4%;
-    --card: 0 0% 100%;
-    --card-foreground: 0 0% 4%;
-    --popover: 0 0% 100%;
-    --popover-foreground: 0 0% 4%;
+    --background: 35 24% 96%;
+    --foreground: 28 18% 15%;
+    --card: 34 29% 94%;
+    --card-foreground: 28 18% 15%;
+    --popover: 34 29% 94%;
+    --popover-foreground: 28 18% 15%;
 
     /* UI Colors */
-    --primary: 0 0% 4%;
-    --primary-foreground: 0 0% 98%;
-    --secondary: 0 0% 96%;
-    --secondary-foreground: 0 0% 4%;
-    --muted: 0 0% 92%;
-    --muted-foreground: 0 0% 40%;
+    --primary: 28 18% 15%;
+    --primary-foreground: 34 30% 97%;
+    --secondary: 34 24% 92%;
+    --secondary-foreground: 28 18% 18%;
+    --muted: 33 20% 88%;
+    --muted-foreground: 28 12% 35%;
 
     /* Mapping Logo Colors to UI Roles */
     --accent: var(--brand-orange);
@@ -42,42 +41,46 @@
     --info: var(--brand-blue);
     --success: var(--brand-green);
 
-    --destructive: 0 84% 60%;
-    --destructive-foreground: 0 0% 98%;
-    --border: 0 0% 90%;
-    --input: 0 0% 90%;
+    --destructive: 2 71% 44%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 31 20% 82%;
+    --input: 31 20% 82%;
     --ring: var(--brand-orange);
 
     --radius: 0rem;
-    /* Sharp, professional corners */
+    /* Rounded corners for a heavier, grounded feel */
+    --radius: 0.15rem;
+
+    --font-heading: var(--font-galari-heading), "Merriweather", Georgia, serif;
+    --font-body: var(--font-galari-body), "Nunito Sans", Inter, sans-serif;
 
     /* Charts / Functional Colors */
     --chart-1: var(--brand-orange);
     --chart-2: var(--brand-blue);
     --chart-3: var(--brand-green);
-    --chart-4: 0 0% 4%;
-    --chart-5: 0 0% 80%;
+    --chart-4: 28 18% 22%;
+    --chart-5: 28 16% 77%;
   }
 
   .dark {
-    --background: 0 0% 4%;
-    --foreground: 0 0% 98%;
-    --card: 0 0% 4%;
-    --card-foreground: 0 0% 98%;
-    --popover: 0 0% 4%;
-    --popover-foreground: 0 0% 98%;
-    --primary: 0 0% 98%;
-    --primary-foreground: 0 0% 4%;
-    --secondary: 0 0% 12%;
-    --secondary-foreground: 0 0% 98%;
-    --muted: 0 0% 12%;
-    --muted-foreground: 0 0% 64%;
+    --background: 28 16% 14%;
+    --foreground: 34 22% 94%;
+    --card: 28 16% 18%;
+    --card-foreground: 34 22% 94%;
+    --popover: 28 16% 18%;
+    --popover-foreground: 34 22% 94%;
+    --primary: 34 22% 94%;
+    --primary-foreground: 28 16% 14%;
+    --secondary: 28 16% 24%;
+    --secondary-foreground: 34 22% 94%;
+    --muted: 28 16% 24%;
+    --muted-foreground: 31 14% 78%;
     --accent: var(--brand-orange);
     --accent-foreground: 0 0% 98%;
-    --destructive: 0 63% 31%;
-    --destructive-foreground: 0 0% 98%;
-    --border: 0 0% 15%;
-    --input: 0 0% 15%;
+    --destructive: 2 71% 44%;
+    --destructive-foreground: 34 22% 94%;
+    --border: 28 12% 28%;
+    --input: 28 12% 28%;
     --ring: var(--brand-orange);
   }
 }
@@ -158,7 +161,13 @@
   body {
     background-color: var(--color-background);
     color: var(--color-foreground);
+    font-family: var(--font-body);
+    background-image:
+      radial-gradient(circle at 20% 20%, rgba(209, 138, 74, 0.1), transparent 42%),
+      radial-gradient(circle at 80% 0%, rgba(58, 93, 120, 0.1), transparent 38%),
+      linear-gradient(180deg, hsl(var(--background)), hsl(var(--secondary)));
     font-feature-settings: "rlig" 1, "calt" 1;
+    text-rendering: optimizeLegibility;
   }
 }
 
@@ -196,7 +205,7 @@
   }
 
   .glass {
-    @apply bg-white/80 backdrop-blur-sm border border-white/20;
+    @apply bg-secondary/70 backdrop-blur-sm border border-border;
   }
 
   /* Gradients */
@@ -205,7 +214,7 @@
   }
 
   .gradient-gray {
-    background: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(0, 0%, 20%) 100%);
+    background: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(var(--brand-primary)) 100%);
   }
 
   /* Animations */

@@ -11,17 +11,17 @@ const EnvironmentalPage = () => {
     const services = [
         {
             title: "Bush Regeneration",
-            description: "Our specialist crew brings vitality to every project with restoration expertise, Machinary operation, and ecological assessment of diverse ecosystems.",
+            description: "Our bush crew includes team members with Certificate III Conservation and Ecosystem Management and Environmental Science backgrounds, delivering restoration works, specialist machinery operation, weed control, plant identification, site species selection, and ecosystem condition assessment.",
             icon: Leaf
         },
         {
             title: "Holistic Weed Management",
-            description: "Integrated plans to control invasive plants using natural, mechanical, and chemical control methods tailored to native flora preservation.",
+            description: "We develop integrated weed management plans using natural, mechanical, and chemical controls, including native competition planting, composting, slashing, mowing, controlled burns, and targeted treatment across threatened ecosystems.",
             icon: BarChart3
         },
         {
-            title: "Carbon Markets",
-            description: "Partnering with Local Aboriginal Land Councils to facilitate participation in carbon markets through feasibility studies and management plans.",
+            title: "Environmental and Carbon Markets",
+            description: "Our team works with Local Aboriginal Land Councils on feasibility studies, training, partner engagement, market registration, credit sales, and compliant management plans, including collaboration with accredited BAM assessors.",
             icon: Cloud
         }
     ];
@@ -32,7 +32,7 @@ const EnvironmentalPage = () => {
                 title="Environmental Advisory"
                 category="Technical Services"
                 breadcrumb="Consultancy"
-                subtitle="Leveraging cutting-edge science and technology to ensure optimal environmental and economic benefits for our clients."
+                subtitle="18fifty3 Group specializes in environmental management consultancy and service solutions from strategic planning through practical implementation."
             />
 
             {/* Introductory Text */}
@@ -44,7 +44,7 @@ const EnvironmentalPage = () => {
                         viewport={{ once: true }}
                         className="text-2xl md:text-3xl font-medium text-primary tracking-tight leading-tight uppercase"
                     >
-                        18FiFTY3 Group specializes in comprehensive environmental management consultancy, encompassing everything from <span className="text-accent">strategic planning</span> to practical implementation.
+                        18FiFTY3 Group specializes in comprehensive environmental management consultancy and service solutions, encompassing everything from <span className="text-accent">strategic planning</span> to practical implementation.
                     </motion.p>
                 </div>
             </section>
@@ -86,21 +86,21 @@ const EnvironmentalPage = () => {
                             viewport={{ once: true }}
                             className="space-y-8"
                         >
-                            <span className="text-accent text-[10px] font-bold tracking-[0.4em] uppercase">Compliance</span>
+                            <span className="text-accent text-xs font-bold tracking-[0.18em] uppercase">Compliance</span>
                             <h2 className="text-5xl font-bold uppercase tracking-tighter text-primary">
                                 Reporting & <br /> Monitoring<span className="text-accent">.</span>
                             </h2>
                             <p className="text-muted-foreground text-lg font-medium leading-relaxed">
-                                Our team is familiar with planning and reporting requirements under the NSW Environmental Planning & Assessment Act. We design rigorous monitoring plans to assess project effectiveness and adapt to evolving environmental issues.
+                                Our team is familiar with planning and reporting requirements under the NSW Environmental Planning and Assessment Act and regularly develops Review of Environmental Factor reports. We design rigorous monitoring plans to assess each project and adapt to evolving environmental issues.
                             </p>
                             <div className="grid grid-cols-2 gap-8 pt-4">
                                 <div className="space-y-2">
                                     <span className="block text-4xl font-bold text-primary italic">REF</span>
-                                    <span className="text-[10px] font-bold text-muted-foreground uppercase tracking-widest">Review of Factors</span>
+                                    <span className="text-xs font-bold text-muted-foreground uppercase tracking-[0.12em]">Review of Factors</span>
                                 </div>
                                 <div className="space-y-2">
                                     <span className="block text-4xl font-bold text-primary italic">BAM</span>
-                                    <span className="text-[10px] font-bold text-muted-foreground uppercase tracking-widest">Accredited Assessors</span>
+                                    <span className="text-xs font-bold text-muted-foreground uppercase tracking-[0.12em]">Accredited Assessors</span>
                                 </div>
                             </div>
                         </motion.div>
@@ -111,7 +111,7 @@ const EnvironmentalPage = () => {
                             className="relative aspect-video overflow-hidden"
                         >
                             <Image
-                                src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/defc71b0-8e90-4aef-a168-e06709cb16c8-vaughancivil-com-au/assets/images/istockphoto-1562427585-612x612-1-8.jpg"
+                                src="https://images.squarespace-cdn.com/content/v1/65d43588ddcb5b7876a3823e/f78787aa-b6ee-4050-99b9-bcccb84dc5d0/bush_regen.jpg"
                                 alt="Environmental Advisory"
                                 fill
                                 className="object-cover grayscale"
@@ -125,7 +125,7 @@ const EnvironmentalPage = () => {
             <section className="py-24 bg-accent">
                 <div className="max-w-[1600px] mx-auto px-6 md:px-12 text-center text-primary">
                     <h2 className="text-4xl md:text-5xl font-bold uppercase tracking-tighter mb-10">
-                        Discuss your sustainability <br /> goals with our experts.
+                        Discuss your environmental <br /> goals with our experts.
                     </h2>
                     <Link href="/contact" className="inline-block py-6 px-14 bg-primary text-white text-xs font-bold uppercase tracking-[0.3em] hover:bg-white hover:text-primary transition-all duration-500">
                         Consultation
