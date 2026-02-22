@@ -73,7 +73,7 @@ export default function RootLayout({
           data-custom-data='{"appName": "YourApp", "version": "1.0.0", "greeting": "hi"}'
         />
         <Header />
-        <main className="pt-[96px]">{children}</main>
+        <main className="pt-[82px] md:pt-[96px] lg:pt-[106px]">{children}</main>
         <Footer />
         <Suspense fallback={null}>
           <TrackingManager />

@@ -162,6 +162,7 @@
     background-color: var(--color-background);
     color: var(--color-foreground);
     font-family: var(--font-body);
+    overflow-x: hidden;
     background-image:
       radial-gradient(circle at 20% 20%, rgba(209, 138, 74, 0.1), transparent 42%),
       radial-gradient(circle at 80% 0%, rgba(58, 93, 120, 0.1), transparent 38%),
